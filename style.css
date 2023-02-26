@@ -36,9 +36,16 @@ footer {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
+.nav:hover{
+    background: #5a1b6d;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 10px;
+}
 
 .logo{
     display: block;
+    cursor: pointer;
     width: 150px;
 }
 
@@ -103,7 +110,7 @@ section{
    column-gap: 2em;
 }
 
-.imagenesMiercolesCeniza li{
+.imagenesMiercolesCeniza li {
     padding: 10px;
     text-decoration: none;
     display: inline-block;
@@ -148,4 +155,20 @@ section{
     justify-content: space-between;
     margin-top: -70px;
     font-family: 'Courier New', Courier, monospace;
+}
+
+
+.boton-subir img{
+    scroll-behavior: smooth;
+    position: fixed;
+    width: 30px;
+    margin: 10px;
+    padding: 10px;
+    background: #c37ed4;
+    border-radius: 100px;
+}
+
+.boton-subir img:hover{
+    background: #711a86;
+    width: 35px;
 }
