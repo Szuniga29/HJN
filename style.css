@@ -75,7 +75,20 @@ section{
 .imagenesMiercolesCeniza li{
     padding: 10px;
     text-decoration: none;
-} 
+}
+
+@media only screen and (max-width: 700px){
+    .imagenes {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  @media only screen and (max-width: 500px){
+    .imagenes {
+      width: 100%;
+    }
+  }
+  
 
 .div-footer h2{
     text-align: center;
