@@ -22,7 +22,7 @@ footer {
 
 .menu{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     list-style: none;
 }
 
@@ -76,6 +76,19 @@ section{
     padding: 10px;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 700px){
+    .imagenesMiercolesCeniza {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  @media only screen and (max-width: 500px){
+    .imagenesMiercolesCeniza {
+      width: 100%;
+    }
+  }
+  
 
 .div-footer h2{
     text-align: center;
