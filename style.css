@@ -12,14 +12,22 @@ body {
     font-family: Arial, sans-serif;
 }
 
-h1{
+#inicio h1{
     border-radius: 40px;
     background-color: rgb(83, 22, 139);
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  margin: 0 auto;
-  width: fit-content;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content; 
+}
+
+h1{
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: fit-content;
 }
 
 header {
@@ -160,6 +168,10 @@ section:first-child img {
     outline: none;
     cursor: pointer;
     display: none;
+}
+
+.secciones{
+    background-color: #e1bfe6;
 }
 
 footer {
