@@ -2,51 +2,14 @@ html{
     scroll-behavior: smooth;
 }
 
-.navigation{
-    display:grid;
-    background: #833596;
-    border-radius: 20px;
-}
-
-nav{
-    display: block;
-    border-radius: 10px;
-    text-align: center;
-    margin-left: 80px;
-    margin-top: -5.7%;
-}
-
 footer {
-    justify-content: center;
     background-color: #833596;
     color: #fff;
 }
-  
-.menu{
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
 
-.links{
-    text-decoration: none;
-    letter-spacing: .5px;
-    font-size: 30px;
-    color: white;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.nav:hover{
-    background: #5a1b6d;
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    padding: 10px;
-}
-
-.logo{
-    display: block;
-    cursor: pointer;
-    width: 150px;
+footer h2{
+    text-align: center;
+    padding: auto;
 }
 
 .logo-facebook{
@@ -56,119 +19,3 @@ footer {
     padding-bottom: 20px;
 }
 
-.back{
-    width: 62%;
-
-}
-
-h2{
-    background: #833596;
-    margin-left: 810px;
-    margin-right: 810px;
-    border-radius: 10px;
-}
-
-section{
-    display: block;
-    text-align: center;
-}
-
-#inicio{
-    color: black;
-}
-
-.imagenes1{ 
-    display: grid;
-    padding: 10px;
-    margin-left: none;
-    margin-right: none;
-    background-color: antiquewhite;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.imagenes2{ 
-    display: grid;
-    padding: 10px;
-    margin-left: none;
-    margin-right: none;
-    background-color: rgb(224, 217, 243);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.imagenesMiercolesCeniza ul{
-    display: block;
-    list-style: none;
-    -webkit-column-count: 2;
-   -moz-column-count: 2;
-   column-count: 2;
-   -webkit-column-gap: 2em;
-   -moz-column-gap: 2em;
-   column-gap: 2em;
-}
-
-.imagenesMiercolesCeniza li {
-    padding: 10px;
-    text-decoration: none;
-    display: inline-block;
-   width: 100%;
-   margin-bottom: 1em;
-}
-
-.imagenesPeregrinacion ul{
-    display: block;
-    list-style: none;
-    -webkit-column-count: 2;
-   -moz-column-count: 2;
-   column-count: 2;
-   -webkit-column-gap: 2em;
-   -moz-column-gap: 2em;
-   column-gap: 2em;
-}
-
-.imagenesPeregrinacion li{
-    padding: 10px;
-    text-decoration: none;
-    display: inline-block;
-   width: 100%;
-   margin-bottom: 1em;
-}
-
-@media only screen and (max-width: 700px){
-    .imagenes {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
-  }
-  @media only screen and (max-width: 500px){
-    .imagenes {
-      width: 50%;
-    }
-  }
-  
-
-.div-footer h2{
-    font-size: 20px ;
-    justify-content: space-between;
-    margin-top: -70px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-
-.boton-subir img{
-    scroll-behavior: smooth;
-    position: fixed;
-    width: 30px;
-    margin: 10px;
-    padding: 10px;
-    background: #c37ed4;
-    border-radius: 100px;
-}
-
-.boton-subir img:hover{
-    background: #711a86;
-    width: 35px;
-}
