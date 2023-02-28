@@ -64,6 +64,10 @@ nav {
       display: none;
     }
   
+    nav ul.show {
+        display: block;
+      }
+
     nav li {
       display: block;
       text-align: center;
