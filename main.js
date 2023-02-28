@@ -51,7 +51,10 @@ const toggleMenu = () => {
   
   const menuLinks = document.querySelectorAll(".menu-link");
   menuLinks.forEach(link => link.addEventListener("click", hideMenu));
+  menuLinks.forEach(link => link.addEventListener("touchstart", hideMenu));
   
   const hamburger = document.getElementById("hamburger");
   hamburger.addEventListener("click", toggleMenu);
+  hamburger.addEventListener("touchstart", toggleMenu);
+  
   
