@@ -111,9 +111,6 @@ header {
         display: block;
         padding: 1rem 2rem;
     }
-    .mobile-menu .login-button button {
-        width: 100%;
-    }
     .open {
         display: block;
     }
