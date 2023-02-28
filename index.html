@@ -9,29 +9,41 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="images/Diseño sin título (2).png" alt="Logo">
-            <ul class="menu">
-                <li><a  href="#inicio">Inicio</a></li>
-                <li><a  href="#seccion1">Miércoles de ceniza</a></li>
-                <li><a  href="#seccion2">Peregrinaciones</a></li>
-                <li><a  href="#seccion3">Lunes Santo</a></li>
-                <li><a  href="#seccion4">Jueves Santo</a></li>
-                <li><a  href="#seccion5">Viernes Santo</a></li>
-            </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="images/Diseño sin título (2).png" alt="Logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#seccion1" class="nav-link">Miercoles de Ceniza</a></li>
+                    <li class="nav-item"><a href="#seccion2" class="nav-link">Peregrinaciones</a></li>                   
+                    <li class="nav-item"><a href="#seccion3" class="nav-link">Lunes Santo</a></li>
+                    <li class="nav-item"><a href="#seccion4" class="nav-link">Jueves Santo</a></li>
+                    <li class="nav-item"><a href="#seccion5" class="nav-link">Viernes Santo</a></li>
+                </ul>
+            </div>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="images/menu_white_36dp.svg" alt=""></button>
+            </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#seccion1" class="nav-link">Miercoles de Ceniza</a></li>
+                    <li class="nav-item"><a href="#seccion2" class="nav-link">Peregrinaciones</a></li>
+                    <li class="nav-item"><a href="#seccion3" class="nav-link">Lunes Santo</a></li>
+                    <li class="nav-item"><a href="#seccion4" class="nav-link">Jueves Santo</a></li>
+                    <li class="nav-item"><a href="#seccion5" class="nav-link">Viernes Santo</a></li>
+            </ul>
+        </div>
     </header>
 
     <main>
         <section  id="inicio">
             <h1>HERMANDAD DE JESUS NAZARENO GUADALUPE DE CARTAGO | CUARESMA 2023</h1>
             <div class="columna">
-                <img src="images/1.jpg" onclick="ampliarImagen('images/1.jpg')" alt="Imagen 1">
+                <img src="images/1.jpg" alt="Imagen 1">
             </div>
             <button onclick="volverArriba()" id="volver-arriba">↑</button>
         </section>
