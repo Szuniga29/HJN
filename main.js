@@ -40,16 +40,16 @@ document.documentElement.scrollTop = 0;
 }
 
 const toggleMenu = () => {
-    const menu = document.getElementById("menu");
+    const menu = document.getElementById("toggle-menu");
     menu.classList.toggle("show");
   }
   
   const hideMenu = () => {
-    const menu = document.getElementById("menu");
+    const menu = document.getElementById("toggle-menu");
     menu.classList.remove("show");
   }
   
-  const menuLinks = document.querySelectorAll(".menu-link");
+  const menuLinks = document.querySelectorAll(".toggle-menu-link");
   menuLinks.forEach(link => link.addEventListener("click", hideMenu));
   menuLinks.forEach(link => link.addEventListener("touchstart", hideMenu));
   
