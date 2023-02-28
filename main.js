@@ -39,21 +39,21 @@ function volverArriba() {
 document.documentElement.scrollTop = 0;
 }
 const toggleMenu = () => {
-    const menu = document.getElementById("menu");
-    menu.classList.toggle("show");
-  }
-  
-  const hideMenu = () => {
-    const menu = document.getElementById("menu");
-    menu.classList.remove("show");
-  }
-  
-  const menuLinks = document.querySelectorAll(".menu-link");
-  menuLinks.forEach(link => link.addEventListener("click", hideMenu));
-  menuLinks.forEach(link => link.addEventListener("touchstart", hideMenu));
-  
-  const toggleButton = document.getElementById("toggle-menu");
-  toggleButton.addEventListener("click", toggleMenu);
-  toggleButton.addEventListener("touchstart", toggleMenu);
-  
+  const menu = document.getElementById("menu");
+  menu.classList.toggle("show");
+}
+
+const hideMenu = () => {
+  const menu = document.getElementById("menu");
+  menu.classList.remove("show");
+}
+
+const menuLinks = document.querySelectorAll(".menu-link");
+menuLinks.forEach(link => link.addEventListener("click", hideMenu));
+menuLinks.forEach(link => link.addEventListener("touchstart", hideMenu));
+
+const toggleButton = document.getElementById("toggle-menu");
+toggleButton.addEventListener("click", toggleMenu);
+toggleButton.addEventListener("touchstart", toggleMenu);
+
   
