@@ -40,7 +40,7 @@ document.documentElement.scrollTop = 0;
 }
 const toggleMenu = () => {
   const menu = document.getElementById("menu");
-  menu.classList.toggle("show");
+  menu.classList.toggleMenu("show");
 }
 
 const hideMenu = () => {
