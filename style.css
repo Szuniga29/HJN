@@ -79,7 +79,6 @@ nav {
     /* Mostrar el botón del menú hamburguesa */
     .menu-toggle {
       display: block;
-      background-color: #f2f2f2;
       padding: 10px;
       text-align: right;
     }
