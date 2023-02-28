@@ -1,25 +1,170 @@
-html{
-    scroll-behavior: smooth;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(83, 22, 139);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 50px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #FFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid plum; /* Agrega un borde inferior al pasar el cursor */
+}
+
+nav ul li a:hover {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra al pasar el cursor */
+}
+
+nav ul li a:hover {
+    transform: rotate(360deg); /* Agrega una animación de rotación al pasar el cursor */
+}
+
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    width: 100%;
+    margin: 50px 0;
+}
+
+section:first-child img {
+    width: 100%;
+    max-width: 800px; /* Establece un ancho máximo para la imagen */
+    height: auto; /* Establece la altura automática para mantener la proporción */
+  }
+
+
+
+  section:not(:first-child) img {
+    max-width: 100%;
+    height: auto;
+    width: 700px;
+    max-width: 100%;
+  }
+  
+
+.columna {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.columna img {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+#volver-arriba {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: none;
 }
 
 footer {
-    margin-left: -8px;
-    margin-right: -8px;
-    background-color: #833596;
+    background-color: #333;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
 
-footer h2{
-    margin-top: -50px;
-    padding-bottom: 20px;
-    font-size: auto 20px;
-    text-align: center;
+footer p {
+margin: 0;
+padding: 10px;
 }
 
-.logo-facebook{
-    width: 40px;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+/* Media queries para hacer la página responsiva */
+
+@media (max-width: 768px) {
+nav ul {
+flex-direction: column;
+align-items: center;
+} 
+
+
+nav li {
+    margin: 10px 0;
 }
 
+#volver-arriba {
+    font-size: 16px;
+}
+
+.columna img {
+    width: 100%;
+}
+}
+
+@media (max-width: 480px) {
+.columna img {
+height: auto;
+}
+}

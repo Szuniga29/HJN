@@ -1,22 +1,111 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HJN Guadalupe | Cartago</title>
+    <title>HJN | GUADALUPE CARTAGO</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/Diseño sin título (2).png" alt="Logo">
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#seccion1">Miércoles de ceniza</a></li>
+                <li><a href="#seccion2">Peregrinaciones</a></li>
+                <li><a href="#seccion3">Lunes Santo</a></li>
+                <li><a href="#seccion4">Jueves Santo</a></li>
+                <li><a href="#seccion5">Viernes Santo</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <footer class="footer">
-        <div class="div-footer">
-            <a href="https://www.facebook.com/profile.php?id=100064879860222">
-                <img class="logo-facebook" src="images/facebook.png" alt="HJN | Guadalupe, Cartago">
-            </a>
-            <h2>© Derechos Reservados 2023 © Desarrollador: Steven Zúñiga Araya | Fotografías: Jose Bejarano Cordero</h2>
-        </div>
+    <main>
+        <section id="inicio">
+            <div class="columna">
+                <img src="images/1.jpg" onclick="ampliarImagen('images/1.jpg')" alt="Imagen 1">
+            </div>
+            <button onclick="volverArriba()" id="volver-arriba">↑</button>
+        </section>
+
+        <section id="seccion1">
+            <div class="columna">
+                <img src="images/cuaresma1.jpg" onclick="ampliarImagen('images/cuaresma1.jpg')" alt="Imagen 5">
+                <img src="images/cuaresma2.jpg" onclick="ampliarImagen('images/cuaresma2.jpg')" alt="Imagen 6">
+            </div>
+            <div class="columna">
+                <img src="images/cuaresma3.jpg" onclick="ampliarImagen('images/cuaresma3.jpg')" alt="Imagen 7">
+                <img src="images/cuaresma4.jpg" onclick="ampliarImagen('images/cuaresma4.jpg')" alt="Imagen 8">
+            </div>
+            <div class="columna">
+                <img src="images/cuaresma5.jpg" onclick="ampliarImagen('images/cuaresma5.jpg')" alt="Imagen 7">
+                <img src="images/cuaresma6.jpg" onclick="ampliarImagen('images/cuaresma6.jpg')" alt="Imagen 8">
+            </div>
+            <div class="columna">
+                <img src="images/cuaresma7.jpg" onclick="ampliarImagen('images/cuaresma7.jpg')" alt="Imagen 7">
+                <img src="images/cuaresma8.jpg" onclick="ampliarImagen('images/cuaresma8.jpg')" alt="Imagen 8">
+            </div>
+            <button onclick="volverArriba()" id="volver-arriba">↑</button>
+        </section>
+
+        <section id="seccion2">
+            <div class="columna">
+                <img src="imagen9.jpg" onclick="ampliarImagen('imagen9.jpg')" alt="Imagen 9">
+                <img src="imagen10.jpg" onclick="ampliarImagen('imagen10.jpg')" alt="Imagen 10">
+            </div>
+            <div class="columna">
+                <img src="imagen11.jpg" onclick="ampliarImagen('imagen11.jpg')" alt="Imagen 11">
+                <img src="imagen12.jpg" onclick="ampliarImagen('imagen12.jpg')" alt="Imagen 12">
+            </div>
+            <button onclick="volverArriba()" id="volver-arriba">↑</button>
+        </section>
+
+        <section id="seccion3">
+            <div class="columna">
+                <img src="imagen13.jpg" onclick="ampliarImagen('imagen13.jpg')" alt="Imagen 13">
+            </div>
+            <div class="columna">
+                <img src="imagen14.jpg" onclick="ampliarImagen('imagen14.jpg')" alt="Imagen 14">
+                <img src="imagen15.jpg" onclick="ampliarImagen('imagen15.jpg')" alt="Imagen 15">
+            </div>
+            <button onclick="volverArriba()" id="volver-arriba">↑</button>
+        </section>
+    
+        <section id="seccion4">
+            <div class="columna">
+                <img src="imagen16.jpg" onclick="ampliarImagen('imagen16.jpg')" alt="Imagen 16">
+                <img src="imagen17.jpg" onclick="ampliarImagen('imagen17.jpg')" alt="Imagen 17">
+            </div>
+            <div class="columna">
+                <img src="imagen18.jpg" onclick="ampliarImagen('imagen18.jpg')" alt="Imagen 18">
+                <img src="imagen19.jpg" onclick="ampliarImagen('imagen19.jpg')" alt="Imagen 19">
+            </div>
+            <button onclick="volverArriba()" id="volver-arriba">↑</button>
+        </section>
+    
+        <section id="seccion5">
+            <div class="columna">
+                <img src="imagen20.jpg" onclick="ampliarImagen('imagen20.jpg')" alt="Imagen 20">
+                <img src="imagen21.jpg" onclick="ampliarImagen('imagen21.jpg')" alt="Imagen 21">
+            </div>
+            <div class="columna">
+                <img src="imagen22.jpg" onclick="ampliarImagen('imagen22.jpg')" alt="Imagen 22">
+                <img src="imagen23.jpg" onclick="ampliarImagen('imagen23.jpg')" alt="Imagen 23">
+            </div>
+            <button onclick="volverArriba()" id="volver-arriba">↑</button>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Derechos reservados &copy; 2023</p>
     </footer>
+    
+    <script src="script.js"></script>
 </body>
 </html>
+       
+        
