@@ -49,33 +49,71 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
   }
   
-  nav img {
-    height: 3rem;
-  }
-  
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    list-style: none;
-  }
-  
-  nav ul li a {
+  ul {
     color: #fff;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    margin: 0 10px;
+  }
+
+  .logo {
+    color: white;
+  }
+  
+  .menu li a {
+    color: white;
     text-decoration: none;
-    font-size: 1.2rem;
-    padding: 1rem;
   }
   
-
   
-  @media screen and (max-width: 768px) {
-    
+  .hamburger {
+    color: #fff;
+    display: none;
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  
+    ul {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+    }
+  
+    li {
+      margin: 10px 0;
+    }
+  
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      margin-right: 20px;
+    }
+  
+    .hamburger span {
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px 0;
+      background-color: #fff;
+    }
   }
 
+  nav img {
+    height: 4rem;
+  }
+  
 nav ul li a:hover {
     border-bottom: 2px solid plum; /* Agrega un borde inferior al pasar el cursor */
 }
@@ -83,6 +121,14 @@ nav ul li a:hover {
 nav ul li a:hover {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra al pasar el cursor */
 }
+
+.menu {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .menu.show {
+    transform: translateY(0);
+  }
 
 main {
     display: flex;
