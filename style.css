@@ -15,7 +15,6 @@ body {
 }
 
 #inicio h1{
-    font-family: 'Satisfy', sans-serif;
     border-radius: 40px;
     background-color: rgba(83, 22, 139, 0.55);
     color: black;
@@ -100,7 +99,6 @@ header {
     }
     .mobile-menu-icon {
         display: block;
-        height: 9px;
     }
     .mobile-menu-icon button {
         background-color: transparent;
