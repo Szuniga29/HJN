@@ -74,6 +74,8 @@ nav li {
     margin: 0 10px;
 }
 
+
+
 @media screen and (max-width: 767px) {
     nav button#toggle-menu {
       display: block;
@@ -95,7 +97,17 @@ nav li {
       margin-top: 0;
     }
   }
-  
+
+  @media screen and (max-width: 768px) {
+    .navbar ul {
+      display: none;
+    }
+    
+    .navbar .menu-icon {
+      display: block;
+    }
+  }
+
 nav ul li a:hover {
     border-bottom: 2px solid plum; /* Agrega un borde inferior al pasar el cursor */
 }
@@ -159,7 +171,9 @@ section:first-child img {
     bottom: 20px;
     right: 20px;
     font-size: 20px;
-    background-color: #333;
+    background-color: rgb(83, 22, 139);
+    border-radius: 30px;
+    padding: 20px;
     color: #fff;
     border: none;
     outline: none;

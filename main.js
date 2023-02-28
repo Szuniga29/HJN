@@ -38,3 +38,20 @@ window.onscroll = function() {
 function volverArriba() {
 document.documentElement.scrollTop = 0;
 }
+
+const toggleMenu = () => {
+    const menu = document.getElementById("menu");
+    menu.classList.toggle("show");
+  }
+  
+  const hideMenu = () => {
+    const menu = document.getElementById("menu");
+    menu.classList.remove("show");
+  }
+  
+  const menuLinks = document.querySelectorAll(".menu-link");
+  menuLinks.forEach(link => link.addEventListener("click", hideMenu));
+  
+  const hamburger = document.getElementById("hamburger");
+  hamburger.addEventListener("click", toggleMenu);
+  
