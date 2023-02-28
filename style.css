@@ -33,82 +33,70 @@ header {
   
 nav {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  nav img {
+    height: 3rem;
   }
   
   nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
   }
   
-  nav ul li {
-    margin-bottom: 1rem;
-  }
-
   nav ul li a {
-    text-decoration: none;
     color: #fff;
-  }
-
-  nav li {
-    display: inline-block;
-    margin-right: 20px;
-  }
-  
-  nav a {
-    display: inline-block;
-    padding: 10px;
     text-decoration: none;
-    color: #ffff;
+    font-size: 1.2rem;
+    padding: 1rem;
   }
+  
 
   
-  /* Ajustes para pantallas pequeñas */
   @media screen and (max-width: 600px) {
     nav ul {
       display: none;
-      display: flex;
-    flex-direction: row;
-    }
-  
-    nav ul.show {
-        display: block;
-      }
-
-    nav li {
-      display: block;
-      text-align: center;
-      margin: 0;
+      position: absolute;
+      top: 4rem;
+      left: 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+      padding: 1rem;
+      z-index: 1;
     }
   
     nav ul li {
-        margin-right: 1rem;
-        margin-bottom: 0;
-      }
-
-    nav li a {
-      display: block;
-      border-bottom: 1px solid #ddd;
-      margin: 0;
+      margin-bottom: 1rem;
     }
   
-    /* Mostrar el botón del menú hamburguesa */
-    .menu-toggle {
-      display: block;
-      padding: 10px;
-      text-align: right;
+    nav ul li a {
+      font-size: 1.2rem;
+      padding: 0.5rem;
     }
-  }
   
-  /* Reglas de estilo para el logo */
-  nav img {
-    height: 50px;
-    margin-right: 20px;
+    nav .menu-toggle {
+      display: block;
+      font-size: 1.2rem;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+  
+    nav .menu-toggle:hover {
+      background-color: #eee;
+    }
+  
+    nav.show ul {
+      display: flex;
+    }
   }
 
 nav ul li a:hover {
@@ -118,7 +106,6 @@ nav ul li a:hover {
 nav ul li a:hover {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra al pasar el cursor */
 }
-
 
 main {
     display: flex;
@@ -176,7 +163,7 @@ section:first-child img {
 }
 
 footer {
-    background-color: #333;
+    background-color:rgb(83, 22, 139);
     color: #fff;
     display: flex;
     justify-content: center;
@@ -187,6 +174,11 @@ footer {
 footer p {
 margin: 0;
 padding: 10px;
+}
+
+footer img{
+    width: 30px;
+    
 }
 
 /* Media queries para hacer la página responsiva */
