@@ -39,11 +39,4 @@ function volverArriba() {
 document.documentElement.scrollTop = 0;
 }
 
-const toggleMenu = document.getElementById("toggle-menu");
-const menu = document.getElementById("menu");
-
-toggleMenu.addEventListener("touchstart", function() {
-  menu.classList.toggle("active");
-});
-
   
