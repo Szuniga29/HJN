@@ -218,28 +218,28 @@ padding: 10px;
 
 footer img{
     width: 30px;
-    
 }
 
 /* Media queries para hacer la página responsiva */
 
 @media (max-width: 768px) {
-nav ul {
-flex-direction: column;
-align-items: center;
-} 
-
-
-nav li {
-    margin: 10px 0;
-}
-
 #volver-arriba {
     font-size: 16px;
 }
 
 .columna img {
     width: 100%;
+}
+
+footer p{
+    text-align: center;
+    font-size: 12px;
+}
+
+footer img{
+    height: auto;
+    margin-top: 5px;
+    margin-left: 10px;
 }
 }
 
