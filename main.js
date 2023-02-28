@@ -38,22 +38,12 @@ window.onscroll = function() {
 function volverArriba() {
 document.documentElement.scrollTop = 0;
 }
-const toggleMenu = () => {
-  const menu = document.getElementById("menu");
-  menu.classList.toggleMenu("show");
-}
 
-const hideMenu = () => {
-  const menu = document.getElementById("menu");
-  menu.classList.remove("show");
-}
+const toggleMenu = document.getElementById("toggle-menu");
+const menu = document.getElementById("menu");
 
-const menuLinks = document.querySelectorAll(".menu-link");
-menuLinks.forEach(link => link.addEventListener("click", hideMenu));
-menuLinks.forEach(link => link.addEventListener("touchstart", hideMenu));
-
-const toggleButton = document.getElementById("toggle-menu");
-toggleButton.addEventListener("click", toggleMenu);
-toggleButton.addEventListener("touchstart", toggleMenu);
+toggleMenu.addEventListener("touchstart", function() {
+  menu.classList.toggle("active");
+});
 
   
