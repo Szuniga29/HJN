@@ -178,7 +178,7 @@ section:first-child img {
 
   section:first-child video {
     width: 100%;
-    max-width: 1500px; /* Establece un ancho máximo para la imagen */
+    max-width: 1120px; /* Establece un ancho máximo para la imagen */
     height: auto; /* Establece la altura automática para mantener la proporción */
   }
 
