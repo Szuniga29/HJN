@@ -176,6 +176,12 @@ section:first-child img {
     height: auto; /* Establece la altura automática para mantener la proporción */
   }
 
+  section:first-child video {
+    width: 100%;
+    max-width: 1500px; /* Establece un ancho máximo para la imagen */
+    height: auto; /* Establece la altura automática para mantener la proporción */
+  }
+
 
 
   section:not(:first-child) img {
