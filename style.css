@@ -48,7 +48,9 @@ h1{
 
 video{
     width: 800px;
-    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px rgb(49, 3, 49);
 }
 
 @media screen and (max-width: 768px) {
@@ -181,7 +183,7 @@ section:first-child img {
   }
 
   section:first-child video {
-    width: 100%;
+    width: 150%;
     max-width: 1120px; /* Establece un ancho máximo para la imagen */
     height: auto; /* Establece la altura automática para mantener la proporción */
   }
@@ -207,15 +209,16 @@ section:first-child img {
     height: 200px;
     margin: 10px;
     cursor: pointer;
+    box-shadow: 10px 10px 10px rgb(49, 3, 49);
 }
 
 #volver-arriba {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 9px;
+    right: 9px;
     font-size: 20px;
     background-color: rgb(83, 22, 139);
-    border-radius: 30px;
+    border-radius: 50px;
     padding: 20px;
     color: #fff;
     border: none;
@@ -258,9 +261,12 @@ footer img{
     font-size: 16px;
 }
 
-.columna img {
-    width: 100%;
-}
+section:not(:first-child) img {
+    max-width: 100%;
+    height: auto;
+    width: 221px;
+    max-width: 100%;
+  }
 
 footer p{
     text-align: center;
@@ -274,8 +280,10 @@ footer img{
 }
 }
 
-@media (max-width: 480px) {
-.columna img {
-height: auto;
-}
+@media (max-width: 768px) {
+    .columna {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
