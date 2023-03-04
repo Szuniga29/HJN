@@ -55,7 +55,10 @@ video{
 
 @media screen and (max-width: 768px) {
     video{
-        width: 490px;
+        width: 400px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 10px 10px 10px rgb(49, 3, 49);
     }
   }
 
@@ -256,7 +259,7 @@ footer img{
 
 /* Media queries para hacer la página responsiva */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 #volver-arriba {
     font-size: 16px;
 }
@@ -280,10 +283,14 @@ footer img{
 }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .columna {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
+    }
+    .columna img {
+        cursor: pointer;
+        box-shadow: 10px 10px 10px rgb(49, 3, 49);
     }
 }
