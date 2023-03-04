@@ -15,7 +15,7 @@ body {
     background-color: #ffff;
 }
 
-#inicio h1{
+h1{
     border-radius: 40px;
     background-color: rgba(83, 22, 139, 0.55);
     color: black;
@@ -26,7 +26,6 @@ body {
 
 h1{
     color: #000000;
-    padding-top: 30px;
     padding-bottom: 15px;
     text-align: center;
     margin: 0 auto;
@@ -42,23 +41,6 @@ h1{
 
     h1{
         font-size: 15px;
-    }
-  }
-
-
-video{
-    width: 800px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    box-shadow: 10px 10px 10px rgb(49, 3, 49);
-}
-
-@media screen and (max-width: 768px) {
-    video{
-        width: 400px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        box-shadow: 10px 10px 10px rgb(49, 3, 49);
     }
   }
 
@@ -165,14 +147,8 @@ nav ul li a:hover {
     transform: translateY(0);
   }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
 
 section {
-    width: 100%;
     margin: 50px 0;
     background-color: #e1bfe6;
     padding-top: 10px;
@@ -183,15 +159,17 @@ section:first-child img {
     width: 100%;
     max-width: 1100px; /* Establece un ancho máximo para la imagen */
     height: auto; /* Establece la altura automática para mantener la proporción */
+    box-shadow: 10px 10px 10px rgb(49, 3, 49);
   }
 
   section:first-child video {
     width: 150%;
     max-width: 1120px; /* Establece un ancho máximo para la imagen */
     height: auto; /* Establece la altura automática para mantener la proporción */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px rgb(49, 3, 49);
   }
-
-
 
   section:not(:first-child) img {
     max-width: 100%;
@@ -208,11 +186,10 @@ section:first-child img {
 }
 
 .columna img {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: auto;
     margin: 10px;
-    cursor: pointer;
-    box-shadow: 10px 10px 10px rgb(49, 3, 49);
+    
 }
 
 #volver-arriba {
@@ -264,11 +241,20 @@ footer img{
     font-size: 16px;
 }
 
+section:first-child img {
+    width: 94%;
+    height: auto; /* Establece la altura automática para mantener la proporción */
+  }
+
 section:not(:first-child) img {
     max-width: 100%;
     height: auto;
     width: 221px;
-    max-width: 100%;
+  }
+
+  section:first-child video {
+    max-width: 94%; /* Establece un ancho máximo para la imagen */
+    height: auto; /* Establece la altura automática para mantener la proporción */
   }
 
 footer p{
@@ -281,16 +267,10 @@ footer img{
     margin-top: 5px;
     margin-left: 10px;
 }
+
+.columna img {
+    width: 50%;
+    box-shadow: 10px 10px 10px rgb(49, 3, 49);
 }
 
-@media screen and (max-width: 768px) {
-    .columna {
-        display: flex;
-        flex-wrap: nowrap;
-        justify-content: center;
-    }
-    .columna img {
-        cursor: pointer;
-        box-shadow: 10px 10px 10px rgb(49, 3, 49);
-    }
 }
