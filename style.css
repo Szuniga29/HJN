@@ -12,7 +12,7 @@ html{
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #ffff;
+    background-color: #f5c3f5;
 }
 
 header{
@@ -131,6 +131,7 @@ h1{
 
 section {
     margin: 50px 0;
+    box-shadow: #000000;
     background-color: #e1bfe6;
     padding-top: 10px;
     padding-bottom: 10px;
