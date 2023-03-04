@@ -163,7 +163,6 @@ section:first-child img {
   }
 
   section:first-child video {
-    width: 150%;
     max-width: 1120px; /* Establece un ancho máximo para la imagen */
     height: auto; /* Establece la altura automática para mantener la proporción */
     margin-top: 10px;
@@ -236,7 +235,7 @@ footer img{
 
 /* Media queries para hacer la página responsiva */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 0) {
 #volver-arriba {
     font-size: 16px;
 }
@@ -244,17 +243,20 @@ footer img{
 section:first-child img {
     width: 94%;
     height: auto; /* Establece la altura automática para mantener la proporción */
+    box-shadow: 10px 10px 10px rgb(49, 3, 49);
   }
 
 section:not(:first-child) img {
-    max-width: 100%;
+    max-width: 45%;
     height: auto;
     width: 221px;
+    box-shadow: 10px 10px 10px rgb(49, 3, 49);
   }
 
   section:first-child video {
-    max-width: 94%; /* Establece un ancho máximo para la imagen */
+    width: 94%; /* Establece un ancho máximo para la imagen */
     height: auto; /* Establece la altura automática para mantener la proporción */
+    box-shadow: 10px 10px 10px rgb(49, 3, 49);
   }
 
 footer p{
