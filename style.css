@@ -237,7 +237,7 @@ footer img{
 
 /* Media queries para hacer la página responsiva */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 #volver-arriba {
     font-size: 16px;
 }
