@@ -174,7 +174,8 @@ section:first-child img {
     max-width: 100%;
     height: auto;
     width: 790px;
-    max-width: 100%;
+    box-shadow: 10px 10px 10px rgb(49, 3, 49);
+    margin: 40px;
   }
   
 
@@ -197,6 +198,7 @@ section:first-child img {
     right: 9px;
     font-size: 20px;
     background-color: rgb(83, 22, 139);
+    box-shadow: 10px 10px 10px rgb(0, 0, 0);
     border-radius: 50px;
     padding: 20px;
     color: #fff;
@@ -235,7 +237,7 @@ footer img{
 
 /* Media queries para hacer la página responsiva */
 
-@media screen and (min-width: 0) {
+@media screen and (max-width: 768px) {
 #volver-arriba {
     font-size: 16px;
 }
@@ -248,14 +250,14 @@ section:first-child img {
 
 section:not(:first-child) img {
     max-width: 45%;
+    margin: 10px;
     height: auto;
-    width: 221px;
     box-shadow: 10px 10px 10px rgb(49, 3, 49);
   }
 
   section:first-child video {
     width: 94%; /* Establece un ancho máximo para la imagen */
-    height: auto; /* Establece la altura automática para mantener la proporción */
+    height: auto;
     box-shadow: 10px 10px 10px rgb(49, 3, 49);
   }
 
