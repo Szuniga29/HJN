@@ -15,6 +15,12 @@ body {
     background-color: #ffff;
 }
 
+header{
+    display: block;
+    position: relative;
+    background-color: rgba(83, 22, 139) ;
+}
+
 h1{
     border-radius: 40px;
     background-color: rgba(83, 22, 139, 0.55);
@@ -44,62 +50,68 @@ h1{
     }
   }
 
-header {
-    display: blo;
-    background-color: rgb(83, 22, 139);
-}
-  
-#check {
-    display: none;
-}
-
-#icone{
-    top: 60px;
-    cursor: pointer;
-}
-
-.barra{
-    background-color: #580e55;
+  .sidebar {
+    position: fixed;
+    top: 104px;
+    left: -250px;
+    width: 250px;
     height: 100%;
-    width: 300px;
-    position: absolute;
-    transition: all .2s linear;
-    left: -300px;
-}
-
-nav{
-    width: 100%;
-    position: absolute;
-    top: 60px;
-}
-
-nav a{
-    text-decoration: none;
-}
-
-.link{
-    background-color: #3f113d;
+    background-color: #3f0b44;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .sidebar.show {
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar ul li {
+    margin: 10px;
     padding: 20px;
-    font-family: 'Arial';
-    font-size: 12pt;
-    transition: all .2s linear;
-    color: #F4F4F9;
-    border-bottom: 2px solid #bc50c0;
+    
+  }
+  
+  .sidebar ul li a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    background-color: #e1bfe6;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+  }
 
-}
-
-.link:hover {
-    background-color: #58205e;
-}
-
-#check:checked ~ .barra{
-    transform: translateX(300px);
-}
-
-.icono {
-    width: 50px;
-    height: 50px;
-}
+  .hamburger-icon {
+    margin-top: 20px;
+    margin-left: 12px;
+    position: fixed;
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon:before, .hamburger-icon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: #333;
+  }
+  
+  .hamburger-icon:before {
+    top: 0;
+  }
+  
+  .hamburger-icon:after {
+    bottom: 0;
+  }
 
 img {
     left: 100px;
@@ -107,11 +119,11 @@ img {
     height: 100px;
 }
   
-nav ul li a:hover {
+.sidebar ul li a:hover {
     border-bottom: 2px solid plum; /* Agrega un borde inferior al pasar el cursor */
 }
 
-nav ul li a:hover {
+.sidebar ul li a:hover {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Agrega una sombra al pasar el cursor */
 }
 

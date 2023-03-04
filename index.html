@@ -35,21 +35,17 @@
         </div>
     </header>
 
-    <input type="checkbox" id="check">
-    <label id="icone" for="check"> <img class="icono" src="images/icone.png"> </label>
-
-    <div class="barra">
-
-        <nav>
-            <a href="#inicio"><div class="link">Inicio</div></a>
-            <a href="#seccion1"><div class="link">Miércoles de Ceniza</div></a>
-            <a href="#seccion2"><div class="link">Peregrinación</div></a>
-            <a href="#seccion3"><div class="link">Lunes Santo</div></a>
-            <a href="#seccion4"><div class="link">Jueves Santo</div></a>
-            <a href="#seccion5"><div class="link">Viernes Santo</div></a>
-        </nav>
-
-    </div>
+    <span onclick="showMenu()" class="hamburger-icon"></span>
+    <div class="sidebar">
+        <ul>
+          <li><a href="#inicio" onclick="hideMenu()">Inicio</a></li>
+          <li><a href="#seccion1" onclick="hideMenu()">Miércoles de Ceniza</a></li>
+          <li><a href="#seccion2" onclick="hideMenu()">Peregrinación</a></li>
+          <li><a href="#seccion3" onclick="hideMenu()">Lunes Santo</a></li>
+          <li><a href="#seccion4" onclick="hideMenu()">Jueves Santo</a></li>
+          <li><a href="#seccion5" onclick="hideMenu()">Viernes Santo</a></li>
+        </ul>
+      </div>
 
     <main>
         <section id="inicio">
