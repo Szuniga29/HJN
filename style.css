@@ -220,7 +220,7 @@ section:first-child img {
 
 .secciones .columna img{
     width: 170px;
-    margin: 5px;
+    margin: 15px;
     box-shadow: 10px 10px 10px rgb(49, 3, 49);
     cursor: pointer;
 }
