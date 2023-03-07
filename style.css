@@ -102,12 +102,13 @@ header{
 .logo img {
     position: absolute;
     left: 50px;
-    width: 100px;
-    height: 100px;
+    width: 90px;
+    height: 90px;
     top: 0;
 }
 
 .logo h1{
+  font-size: 24px;
   color: white;
   text-align: center;
   padding: 30px;
@@ -206,6 +207,7 @@ footer img{
 
 /* Media queries para hacer la página responsiva */
 
+
 @media screen and (max-width: 768px) {
 #volver-arriba {
     font-size: 16px;
@@ -263,19 +265,20 @@ footer img{
 }
 
 .logo h1{
-  position: relative;
-  display: block;
-  font-size: 25px;
+  font-size: 15px;
   color: white;
-  margin: 0;
+  margin-left: 70px;
   padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .logo img {
   position: absolute;
   left: 50px;
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
   top: 0;
 }
 }
+
+    
