@@ -213,7 +213,7 @@ footer img{
 
 /* Media queries para hacer la página responsiva */
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 200px) {
 #volver-arriba {
     font-size: 16px;
 }
@@ -236,6 +236,11 @@ section:not(:first-child) img {
     height: auto;
     box-shadow: 10px 10px 10px rgb(49, 3, 49);
   }
+
+footer{
+  display: fixed;
+  bottom: 0;
+}
 
 footer p{
     text-align: center;
