@@ -143,16 +143,7 @@ section:first-child img {
     margin-top: 10px;
     margin-bottom: 10px;
     box-shadow: 10px 10px 10px rgb(49, 3, 49);
-  }
-
-  section:not(:first-child) img {
-    max-width: 50%;
-    height: auto;
-    width: 7px;
-    box-shadow: 10px 10px 10px rgb(49, 3, 49);
-    margin: 40px;
-  }
-  
+  }  
 
 .secciones .columna img{
     max-width: 50%;
@@ -227,11 +218,12 @@ section:first-child img {
     box-shadow: 10px 10px 10px rgb(49, 3, 49);
   }
 
-section:not(:first-child) img {
-    max-width: 45%;
-    margin: 10px;
+.secciones .columna img{
+    width: 170px;
+    margin: 5px;
     box-shadow: 10px 10px 10px rgb(49, 3, 49);
-  }
+    cursor: pointer;
+}
 
   section:first-child video {
     width: 94%; /* Establece un ancho máximo para la imagen */
