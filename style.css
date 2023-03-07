@@ -36,6 +36,7 @@ header{
 
   .sidebar {
     position: fixed;
+    z-index: 1;
     top: 0;
     left: -250px;
     width: 250px;
@@ -160,7 +161,7 @@ section:first-child img {
 }
 
 .columna img {
-    width: 100px;
+    width: 50px;
     height: auto;
     margin: 10px;
     cursor: pointer;
