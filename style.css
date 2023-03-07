@@ -108,7 +108,6 @@ header{
 }
 
 .logo h1{
-  position: relative;
   color: white;
   text-align: center;
   padding: 30px;
@@ -207,7 +206,7 @@ footer img{
 
 /* Media queries para hacer la página responsiva */
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 768px) {
 #volver-arriba {
     font-size: 16px;
 }
@@ -258,7 +257,6 @@ footer img{
   background-color: rgba(83, 22, 139, 0.55);
   color: black;
   text-align: center;
-  width: fit-content;
   padding: 20px;  
   margin: 0 auto;
   font-size: 15px;
@@ -269,7 +267,6 @@ footer img{
   display: block;
   font-size: 15px;
   color: white;
-  padding-left: 116px;
   margin: 0;
   padding-top: 5px;
 }
@@ -277,8 +274,8 @@ footer img{
 .logo img {
   position: absolute;
   left: 50px;
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 50px;
   top: 0;
 }
 }
