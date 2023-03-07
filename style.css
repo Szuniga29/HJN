@@ -196,7 +196,7 @@ footer {
     justify-content: center;
     align-items: center;
     height: 50px;
-    margin: 0;
+    bottom: 0;
 }
 
 footer p {
@@ -214,7 +214,7 @@ footer img{
 
 /* Media queries para hacer la página responsiva */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 #volver-arriba {
     font-size: 16px;
 }
@@ -271,9 +271,9 @@ footer img{
   display: block;
   font-size: 15px;
   color: white;
-  padding-left: 102px;
+  padding-left: 116px;
   margin: 0;
-  padding-top: 4px;
+  padding-top: 5px;
 }
 
 .logo img {
